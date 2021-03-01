@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="text/javascript" src="groomCalculator.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>Calculator</title>
+  </head>
+  <body>
+      <h1>Qalyn Mal Calculator</h1>
+      <hr>
+      <div id="result">
+        <form onsubmit="return false;">
+          <section id="Ed" class="container">
+            <section id="name_section">
+              <label for="name">Groom's Name:</label>
+              <input id="name" type="text">
+            </section>
+            <section id="bid_section">
+                <label>Enter starting bid: </label>
+                <input id="bid" type="number" min="1">
+            </section>
+            <section id="dropdown">
+                <label for="education">Groom's Education:</label>
+                <select name="education" id="education">
+                  <option value="blank"></option>
+                  <option name="edu" value="1.5" class="edu" >Undergraduate degree</option>
+                  <option name="edu" value="1.2" class="edu" >College degree</option>
+                  <option name="edu" value="1.05" class="edu">High school degree</option>
+                  <option name="edu" value="0.9" class="edu">Middle school degree</option>
+                </select>
+            </section>
+            <section id="dropdown2">
+                <label for="family">Groom's Family net worth:</label>
+                <select name="networth" id="networth">
+                  <option value="blank"></option>
+                  <option value="2">More than 100,000$</option>
+                  <option value="1.5">50,000$ - 100,000$</option>
+                  <option value="1.2">Less than 50,000$</option>
+                </select>
+            </section>
+            <section id="skills">
+                <label for="skills">Groom's skills:</label>
+                <input type="checkbox" name="skills" id="skill" value="200"> Good cook  <br>
+                <input type="checkbox" name="skills" id="skill" value="100"> Playing on dombra<br>
+                <input type="checkbox" name="skills" id="skill" value="150"> Easygoing character<br>
+                <input type="checkbox" name="skills" id="skill" value="100"> Sings well
+            </section>
+            <section id="age">
+                <label for="age">Groom's age: <span id="age_error"></span></label>
+                <input type="radio" name="age" value="1.5"> 18-23<br>
+                <input type="radio" name="age" value="1.2"> 24-27<br>
+                <input type="radio" name= "age" value="0.95"> 28+
+            </section>
+            <section id="gossip">
+                <label for="gossip">Gossip about groom:</label>
+                <input type="checkbox" name="gossip" value="0.85"> Gossips about his parent's attitude<br>
+                <input type="checkbox" name="gossip" value="0.9"> Gossips about his character<br>
+                <input type="checkbox" name="gossip" value="200"> General gossips around his/her person<br>
+            </section>
+            <section >
+                <label for="love_letter">Write your love letter:</label>
+                <textarea id="love_letter" maxlength="500"></textarea>
+            </section>
+            <button id="submit" class="btn">Calculate</button>
+          </section>
+          <section id="sum"></section>
+        </form>
+      <div>
+  </body>
+</html>

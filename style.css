@@ -1,0 +1,94 @@
+body {
+    background-image: url(https://t4.ftcdn.net/jpg/03/70/49/87/360_F_370498716_dLsaHESFAHnEV3a6aOqXTBV6fvslMgGq.jpg);
+    background-size: cover;
+}
+* {
+  font-family: "Kalam", cursive;
+}
+h1 {
+    color: darkred;
+    text-align: center;
+    font-size: 50px;
+}
+hr {
+    max-width: 220px;
+    border: 3px solid black;
+    border-radius: 2px
+}
+form {
+    width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+}
+label {
+    margin: 0;
+    width: 100%;
+    display: block;
+    color: darkred;
+}
+section {
+    margin-bottom: 20px;
+}
+input {
+    margin: 0;
+    color: black;
+}
+input[type=text], input[type=number] {
+    padding: 5px;
+    height: 28px;
+    width: 440px;
+}
+select {
+    padding: 5px;
+    height: 42px;
+    width: 454px;
+}
+textarea {
+    resize: none;
+    width: 454px;
+    height: 150px;
+}
+input[type=text], input[type=number], select, textarea {
+    font-size: 22px;
+}
+.btn {
+    font-family: "Kalam", cursive;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: darkred;
+    width: 460px;
+    height: 40px;
+}
+p {
+    text-align: center;
+    font-size: 30px;
+}
+#total input {
+    font-size: 20px;
+}
+.w100 {
+    width: 100%;
+}
+.err {
+    color: red;
+    padding-left: 50px;
+}
+.profile {
+    color: #8B0000;
+    font-size: 25px;
+    margin: 10px;
+}
+.profile p {
+    margin: 0;
+}
+.profile span {
+    color: black;
+    text-decoration: underline;
+}
+.letter {
+    font-size: 20px;
+    white-space: pre-line
+}
